@@ -7,7 +7,7 @@
 <div class="container">
 <div class="container row">
     <div class="col-lg-10">
-        <h3>BOOKS:</h3>
+        <h3>PIZZAS:</h3>
         <div class="card card-body">
             <table class="table table-sm">
                 <tr>
@@ -23,14 +23,14 @@
                     <td>{{p.type}} </td>
                     <td>{{p.size}} </td>
                     <td> {{p.topping}} </td>
-                    <td><a class="btn btn-sm btn-info" href="{% url 'edit' p.id %}">Edit</a> </td>
-                    <td><a class="btn btn-sm btn-info" href="{% url 'delete' p.id %}">Delete</a> </td>
+                    <td><a class="btn btn-sm btn-info" href="{% url 'editPizza' p.id %}">Edit</a> </td>
+                    <td><a class="btn btn-sm btn-danger" href="{% url 'deletePizza' p.id %}">Delete</a> </td>
                 </tr>
                 {% endfor %}
             </table>
         </div>
     </div>
- 
+
     
 </div>
  

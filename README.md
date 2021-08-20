@@ -4,12 +4,11 @@ Django application to store information about different types of Pizza
 
 Technology used-
 Django - python Framework
-Bootstrap - CS Framework 
+Bootstrap - CSS Framework 
 MongoDB - DB 
 
 
 Features- 
-Database - MongoDB 
 Pizza can be of Multiple types: Regular or Square; Multiple sizes and Toppings - Onion, Tomato, etc. 
 Errors & Validation - The API should return proper 40x codes when any kind of wrong input is sent to the API, the server should not return 500 errors
 The user should not be able to create a pizza of any other type which isn't present in the database.
@@ -24,6 +23,15 @@ Steps to run the project-
 6. Run the command "py manage.py runserver"
 7. copy and paste the url in chrome and use the pizza shop
 
+Steps to connect mongodb and Django:
+1. In settings.py of project folder paste this database setting and remove the previous database settings code.
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'PizzaDB',
+    }
+}
+2. In MongoDB Compass, connect to localhost and craete a database named 'PizzaDB'
 
 Rest APIs-
 1. Get All Types of Pizza- 

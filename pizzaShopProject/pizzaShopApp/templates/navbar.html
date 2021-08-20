@@ -19,23 +19,10 @@
       <li class="nav-item active">
         <a class="nav-link" href="">Home</a>
       </li>
-      {% if request.user.is_staff %}
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="">Add Books</a>
-      </li>
-      {% else %}
-      <li class="nav-item">
-        <a class="nav-link" href="">Cart</a>
-      </li>
-      {% endif %}
-      <li class="nav-item">
-        <a class="nav-link" href="">Login</a>
-      </li>
     </ul>
   </div>
  
   <span class="hello-msg">Hello, {{request.user}}</span>
-  <span ><a  class="hello-msg" href="">Logout</a></span>
+  <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
  
 </nav>

@@ -2,6 +2,12 @@
 Django application to store information about different types of Pizza
 
 
+Technology used-
+Django - python Framework
+Bootstrap - CS Framework 
+MongoDB - DB 
+
+
 Features- 
 Database - MongoDB 
 Pizza can be of Multiple types: Regular or Square; Multiple sizes and Toppings - Onion, Tomato, etc. 
@@ -62,17 +68,20 @@ Rest APIs-
    Response - 200 Ok, If valid
             - If Invalid, 404 not found
 
+
 7. Registers the user-
    http://127.0.0.1:8000/Register
    Request Type - Post
    Body - Username, password, FirstName, LastName
    Response - 200 Ok
 
+
 8. Login the user-
    http://127.0.0.1:8000/Login
    Request Type - Post
    Body - Username, password
    Response - 200 Ok
+
 
 9. Logout the user-
    http://127.0.0.1:8000/Logout
